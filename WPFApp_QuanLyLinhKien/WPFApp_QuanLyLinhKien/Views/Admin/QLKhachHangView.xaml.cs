@@ -1,0 +1,12 @@
+using System.Windows.Controls;
+
+namespace WPFApp_QuanLyLinhKien.Views.Admin
+{
+    public partial class QLKhachHangView : UserControl
+    {
+        public QLKhachHangView()
+        {
+            InitializeComponent();
+        }
+    }
+}

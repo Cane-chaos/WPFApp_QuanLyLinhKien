@@ -11,6 +11,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WPFApp_QuanLyLinhKien.Views.Admin;
+using WPFApp_QuanLyLinhKien.ViewModels.Admin;
+
 
 namespace WPFApp_QuanLyLinhKien.Views.Admin
 {
@@ -22,6 +25,13 @@ namespace WPFApp_QuanLyLinhKien.Views.Admin
         public AdminDashboard()
         {
             InitializeComponent();
+
+            // 🔥 Load QLDonHangView khi đăng nhập thành công
+            var view = new QLDonHangView();
+            view.DataContext = new QLDonHangViewModel();
+
+            MainContent.Content = view;
         }
     }
+
 }
