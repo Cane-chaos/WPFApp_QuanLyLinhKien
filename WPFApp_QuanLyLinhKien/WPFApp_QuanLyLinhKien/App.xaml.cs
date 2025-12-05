@@ -8,17 +8,17 @@ namespace WPFApp_QuanLyLinhKien
 
         protected override void OnStartup(StartupEventArgs e)
         {
-            //base.OnStartup(e);
+            base.OnStartup(e);
 
-            //using (var db = new AppDbContext())
-            //{
-            //    Input.Seed(db);
-            //}
+            using (var db = new AppDbContext())
+            {
+                Input.Seed(db);
+            }
 
 
 
-            //var main = new MainWindow();
-            //main.Show();
+            var main = new MainWindow();
+            main.Show();
         }
     }
 }
